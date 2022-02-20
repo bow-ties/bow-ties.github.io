@@ -1,0 +1,16 @@
+{"x": 0.65,"y": -0.65,"name": "Jlab Dijet Physics"}
+<figcaption><h3>Dijet Physics (2020)</h3></figcaption><img src="img/large/dijets.png" alt="a beautiful work of art"/>
+<figcaption>
+	<h3>Dijet Physics (2020)</h3>
+	<p> Once MIT went virtual, <a href="http://web.mit.edu/8.13/www/index.shtml">8.14</a> Experimental Physics II replaced the exploratory project with modern data analysis. My partner and I chose to work on the mystery of why jets observed in opposite directions emitted in relativistic heavy ion collisions happen to have very different momenta. 
+	<br>Follow along with our <a href="img/large/814poster.pdf"> Poster </a>.<br>
+	A number of models suggest this energy loss can be explained simply by the lengths at which each interacts through the quark-gluon plasma left behind. To test this hypothesis, one simulates Fermi-distributed circles with expected collision cross-sections colliding in order to calculate length anti-correlations. (I was also learning python for this, and my inefficient code couldn't handle the non-intersecting criterion used in most Glauber models so our distribution more clustered).<br>
+	For each of our screened non-interacting jet pairs from PYTHIA, we choose a length pair based on the ATLAS centrality interval, and apply our energy loss. Then, after more screening, we look at the histogram of momentum ratios and the nuclear modification factor (ratio of lead jets to proton jets in a given energy bin - used to ensure energy loss is physical). We want to choose parameters and models that minimize the peak in the first histogram and maintain the flat ~0.5 ratio in the second as observed by ATLAS.<br>
+	Something interesting occurs through pre-screening PYTHIA jets - which is that before interaction, they are more symmetric in energy than protons which we noticed the day before presentation.<br>
+	Anyway, methods of statistically selecting energy loss, including a ratio of gluon creations between gluon and quark jets, and even branching momentum out then applying energy loss to the remaining lengths fail to produce the expected peak.<br>
+	It is clear our minimization was not "robust" enough to handle the number of stochastic inputs (if applied energy loss is chosen around mean value calculated from parameters, one can easily step into low-statistics region; quantization sensitivities if branching from selecting whole number of branches).
+	<br>
+	Overall, our main insight was that purely deterministic path-length dependence is insufficient just as others have demonstrated.
+	</p>
+
+</figcaption>

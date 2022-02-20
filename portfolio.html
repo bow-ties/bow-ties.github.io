@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title> Christopher A. Miller</title>
+	<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="common.css">
+	
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+	<div class="info">
+			<img src="img/me/1.jpg" id="face" class="face" onload="facialize()" align="right" height="190" />
+		<div>
+			<h1><a href="index.html" id="name" > Christopher A. Miller </a></h1>
+			<h2> MIT Department of Physics | MIT Edgerton Center | MIT Program in Art, Culture, &amp; Technology </h2>
+			<div class="hdr">
+				<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="portfolio.html">Portfolio</a></li>
+				  <li><a href="random.html">Random</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<script>
+		faced=false;
+		function facialize(){
+			if(!faced){
+				myfaces = ["img/me/1.jpg","img/me/2.jpg","img/me/3.jpg","img/me/4.jpg","img/me/5.jpg","img/me/6.jpg"];
+				document.getElementById("face").src = myfaces[Math.floor(Math.random() * (myfaces.length))];
+				faced=true;
+			}
+		}
+		</script>
+	</div>
+	<div id="grid-gallery" class="grid-gallery info">
+	<h2> Universal Project Portfolio </h2>
+	<h4 id="diagdesc">A diagram based on Neri Oxman's Krebs Cycle of Creativity and on the approach taken on a classmate's <a href="https://annietzhang.com/about">website</a>. It highlights projects in line with the postmodern idea of crossing boundaries between forms of knowledge production. Positioning of projects has high uncertainty so I made them wobble. </h4> 
+	
+<!-- Notes to self: use width 660px for images-->
+	<svg class="canvas"></svg>
+		<section class="grid-wrap">
+			<ul class="grid">
+				<li class="grid-sizer"></li>
+<li><figure>
+<figcaption><h3>Nuclear Unfolding (2021)</h3></figcaption><img src="img/large/na_box.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>RF Receiver (2021)</h3></figcaption><img src="img/large/receiver.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Edgerton Center Activities (2020-2021)</h3></figcaption><img src="img/large/pinball_kits.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Coconut Project (2020-)</h3></figcaption><img src="img/large/coconut.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Long Walks (2017-)</h3></figcaption><img src="img/large/walkingmap.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Dijet Physics (2020)</h3></figcaption><img src="img/large/dijets.png" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Borderline Murals (2017-2019)</h3></figcaption><img src="img/large/borderline2.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Brandeised (2019)</h3></figcaption><img src="img/large/bd1.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Quantization Physics (2019-2020)</h3></figcaption><img src="img/large/quant.png" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Splatterbot (2019)</h3></figcaption><img src="img/large/splatterbot.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>We, The Unbound (2019)</h3></figcaption><img src="img/large/unbound.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Charcuterie (ongoing hobby)</h3></figcaption><img src="img/large/7.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Cereal Research (2019)</h3></figcaption><img src="img/large/cereal.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Spork in the Road (2018)</h3></figcaption><img src="img/large/19.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Rocket Team Activities (2017-2018)</h3></figcaption><img src="img/large/rockets.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Gavle Goat Sweater (2018)</h3></figcaption><img src="img/large/6a.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Culture Consumption (2018)</h3></figcaption><img src="img/large/cultureconsumption.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption> <h3>Annihilation (2018)</h3> </figcaption> <img src="img/large/annihilation.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Window Painting (2015-2017)</h3></figcaption><img src="img/large/16.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Mantis Shrimp (2017)</h3></figcaption><img src="img/large/10.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Light Flower (2017)</h3></figcaption><img src="img/large/lf.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Life Fountain Fusing (2017)</h3></figcaption><img src="img/large/8b.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Life Fountain (2017)</h3></figcaption><img src="img/large/8a.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>The Kite Runner (2017)</h3></figcaption><img src="img/large/kiterunner.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>FSM Sweater (2017)</h3></figcaption><img src="img/large/6b.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Schrodinger's Cat (2017)</h3></figcaption><img src="img/large/cat.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Potential Well (2016)</h3></figcaption><img src="img/large/11.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>The Tuileries (2016)</h3></figcaption><img src="img/large/15.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>SNARP's Not Another Rectangle Plotter (2016)</h3></figcaption><img src="img/large/13.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>HS Sketch Books (2016)</h3></figcaption><img src="img/large/22.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Self-Portrait (2016)</h3></figcaption><img src="img/large/27.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Spectring (2016)</h3></figcaption><img src="img/large/26.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>My Name's Not Matt (2016)</h3></figcaption><img src="img/large/25.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>La Mante Sur Le Mont (2016)</h3></figcaption><img src="img/large/9.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Grilled Cheese (2016)</h3></figcaption><img src="img/large/12.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Gingerbread Houses (2016-2018)</h3></figcaption><img src="img/large/17.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Big Mouth Billy Bass Sweater (2016)</h3></figcaption><img src="img/large/6c.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Time Dependence (2015)</h3></figcaption><img src="img/large/5.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Seahorse Batik (2015)</h3></figcaption><img src="img/large/20.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Bowtie Holder (2015)</h3></figcaption><img src="img/large/18.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Wood Burning Ornaments (2014, 2021)</h3></figcaption><img src="img/large/woodburn.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Microcosm (2014)</h3></figcaption><img src="img/large/21.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Elementary/Middle School Ceramics (2005-2013)</h3></figcaption><img src="img/large/early.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Elementary/Middle School Art (2005-2013)</h3></figcaption><img src="img/large/early5.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Computer (2013)</h3></figcaption><img src="img/large/computer.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Mr. Stick Comics (2009-2011)</h3></figcaption><img src="img/large/stick.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Childhood Maps (2007-2010)</h3></figcaption><img src="img/large/maps.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Early Technical Drawings (2004-2008)</h3></figcaption><img src="img/large/development.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Very Early Art (2002-2004)</h3></figcaption><img src="img/large/preart.jpg" alt="a beautiful work of art"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Daycare Crafts (2002-2004)</h3></figcaption><img src="img/large/rlc.jpg" alt="a beautiful work of art"/>
+</figure></li>			</ul>
+			<p> Things I should add: Squish the Conqueror (math adventure game), Orion Tale (space Oregon Trail clone), The Verti-Walker (patent pending), Fresnel lens H2O purifier (no practicality expressed), classical mechanics calculator (now with no calculus), arbitrary matrix/system solver (a deep dive into windows.h - beware), transcribed sampled music box w/ synthesizers (actually a box), a robot with meat cleavers which almost fits into corners to pick things up, bowtie Christmas tree, a mug memorializing the Gaussian integral, Borderline animations</p>
+		</section><!-- // grid-wrap -->
+		
+		<section class="slideshow">
+			<ul>
+<li>
+<figure>
+<figcaption>
+<h3>Nuclear Unfolding (2021)</h3>
+	<p> See <a href="http://www.mit.edu/~bowties/img/large/NA.pdf"> final review booklet</a> for background on our class.</p>
+	<p> For a seminar proposing a virtual/augmented reality interactive artwork for the MIT Nuclear Reactor Lab, I devised an environment combining different layers of prompts requiring different perspectives of tacit knowledge in operating a nuclear physics experiment.</p>
+	<p> This box is a tangible remnant of the idea of interactions with knobs from color-coded perspectives (vaguely associated with matters of concern, health, instability, & specialized knowledge).</p>
+	<img src="img/large/na_box.jpg" alt="a beautiful work of art"/>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+<h3>RF Receiver (2021)</h3>
+	<p>This is direct conversion receiver tuned for a performance art project where volunteers hold a 500ft wire in the hollow interior of a helical ramp to the MBTA Alewife Station parking garage - forming an antenna with highest gain around 5-9MHz (up to highly uncertain measurement of building).</p>
+	<p>The device has a rugged enclosure with BNC+SMA connections and a terminal block for accepting rugged 8AWG wiring (chosen so performers don't break it, also on sale at Home Depot).</p>
+	<p>After looking at designs from MIT Lincoln Labs Cantenna and the MIT Haystack SRT, I decided to use the SA602A Mixer IC with local oscillator and input/output filtering designs from the datasheet. There is a superheterodyne output in one ear and a power level (from a peak detector) synthesized (with a voltage-controlled oscillator) into an audible output in the other. </p>
+
+	<img src="img/large/receiver.jpg" alt="a beautiful work of art"/>
+	<img src="img/large/receiver_test.jpg" alt="a beautiful work of art"/>
+	<br/>
+	<p>Here's a cropped schematic:</p>
+	<img src="img/large/receiver_lr.png" alt="a beautiful work of art"/>
+	<br/>
+	<p>Here's a shot from the performance:</p>
+	<img src="img/large/receiver_held.jpg" alt="a beautiful work of art"/>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+<h3>Edgerton Center Activities (2020-2021)</h3>
+
+	<h4> Pinball Course </h4>
+	<p> In January 2021, I was the TA for a pinball machine building class. I ultimately laser cut, 3D printed, and packaged parts for 25 kits. After tutorials on design for 3D printing, laser cutting, and vinyl cutting, we made+mailed out around 200 parts for students.</p>
+	<p> You can have a look at the <a href="img/large/pinball_guide.pdf">assembly guide</a> and <a href="img/large/pinball_final.pdf">final presentations</a>.
+	<br/>
+	<img src="img/large/pinball_kits.jpg" alt="a beautiful work of art"/>
+	<br/>
+	<h4> CP* B*X Kit </h4>
+	<p> I also worked on assembling 5000 14-piece <a href="https://edgerton.mit.edu/node/3020">engineering kits</a> for MIT Admissions - finding efficient ways to open and tape the tops of 5000 9V batteries, extract 5000 wire strippers from clamshell packaging, and to lay out an assembly line - and personally making around half - plus pictures for the instructions.</p>
+	<br/>
+	<img src="img/large/beaveralis.jpg" alt="a beautiful work of art"/>
+	<br/>
+	<h4> Muon Detector </h4>
+	<p> In summer 2020, I virtually mentored a team of high schoolers in Barcelona to build a muon detector based off the Cosmic Watch project. Their initial idea was a Geiger counter, but, due to safety concerns, I reduced the maximum voltage being handled from 600V to ~25V</p>
+	<p> Here is a Zoom screenhot of our first hint of evidence that the circuit was amplifying and extending pulses - and that they occurred at about the proper rate for the volume of scintillator.</p>
+	<br/>
+	<img src="img/large/muons.png" alt="a beautiful work of art"/>
+	<br/>
+	<p> Here is the basic schematic poorly cropped:</p>
+	<br/>
+	<img src="img/large/muons_cropped.png" alt="a beautiful work of art"/>
+	<br/>
+	<h4> Mentor Shirts </h4>
+	<p> Before the pandemic, I learned to use a Cricut Maker by cutting our logo in different colors of iron-on vinyl before aligning and applying to shirts for all of our mentors. I also used a Brother CNC embroidery machine to put our names on them - along with testing Ink/Stitch for more complex shapes.</p>	
+	<br/>
+	<img src="img/large/shirts.jpg" alt="a beautiful work of art"/>
+
+
+</figcaption>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Coconut Project (2020-)</h3>
+	<p> For my photography class, I began taking photos exploring the city with a hobby horse I named Coconut after Monty Python and the Holy Grail. This continued my anthropological exploration of companion species and fit into the larger Boston Metropolitan Trail project with fellow academics. Read all about my project in <a href="img/large/coconut2.pdf">this expanding booklet</a>. </p>
+
+<img src="img/large/coconut.jpg" alt="a beautiful work of art"/>
+<img src="img/large/coconut2.jpg" alt="a beautiful work of art"/>
+<img src="img/large/coconut3.jpg" alt="a beautiful work of art"/>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Long Walks (2017-)</h3>
+	<p> I go on long (8-27mi) walks to observe the urban landscape in very performative ways. One may even call it an <a href="https://www.amazon.com/Walkscapes-walking-as-aesthetic-practice/dp/1683150082">aesthetic practice</a>. Elsewhere I may eventually post some writing on the subject. I have a compilation <a href="random.html#2020-08-17%20-%20Walking">here</a>.</p>
+	<br/>
+	<p>While at MIT, I set out to walk 1000 miles before graduation - a task I completed.</p>
+	<p> An interactive map is available <a href="https://www.google.com/maps/d/edit?mid=1d56pgvRwIWjSCkeU1t59aAnh0UyyjJDH&usp=sharing"> here</a>.</p>
+	<video width="660" height="440" controls>
+	<source src="img/large/walks_final.mp4" type="video/mp4">
+		An animation of walking
+	</video>
+	<img src="img/large/walks.png" alt="a beautiful work of art"/>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Dijet Physics (2020)</h3>
+	<p> Once MIT went virtual, <a href="http://web.mit.edu/8.13/www/index.shtml">8.14</a> Experimental Physics II replaced the exploratory project with modern data analysis. My partner and I chose to work on the mystery of why jets observed in opposite directions emitted in relativistic heavy ion collisions happen to have very different momenta. 
+	<br>Follow along with our <a href="img/large/814poster.pdf"> Poster </a>.<br>
+	A number of models suggest this energy loss can be explained simply by the lengths at which each interacts through the quark-gluon plasma left behind. To test this hypothesis, one simulates Fermi-distributed circles with expected collision cross-sections colliding in order to calculate length anti-correlations. (I was also learning python for this, and my inefficient code couldn't handle the non-intersecting criterion used in most Glauber models so our distribution more clustered).<br>
+	For each of our screened non-interacting jet pairs from PYTHIA, we choose a length pair based on the ATLAS centrality interval, and apply our energy loss. Then, after more screening, we look at the histogram of momentum ratios and the nuclear modification factor (ratio of lead jets to proton jets in a given energy bin - used to ensure energy loss is physical). We want to choose parameters and models that minimize the peak in the first histogram and maintain the flat ~0.5 ratio in the second as observed by ATLAS.<br>
+	Something interesting occurs through pre-screening PYTHIA jets - which is that before interaction, they are more symmetric in energy than protons which we noticed the day before presentation.<br>
+	Anyway, methods of statistically selecting energy loss, including a ratio of gluon creations between gluon and quark jets, and even branching momentum out then applying energy loss to the remaining lengths fail to produce the expected peak.<br>
+	It is clear our minimization was not "robust" enough to handle the number of stochastic inputs (if applied energy loss is chosen around mean value calculated from parameters, one can easily step into low-statistics region; quantization sensitivities if branching from selecting whole number of branches).
+	<br>
+	Overall, our main insight was that purely deterministic path-length dependence is insufficient just as others have demonstrated.
+	</p>
+
+</figcaption>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Borderline Mural Assistance (2017-2019)</h3>
+	<p>I participated in the Borderline mural project in the tunnels under MIT. Though I never submitted a proposed design, I volunteered to help paint 3 murals and to animate another.</p>
+<figcaption><p>Sarah Dohadwala - Blending In (helped paint Fall 2017) </p></figcaption>
+<img src="img/large/borderline1.jpg" alt="a beautiful work of art"/>
+<figcaption><p>Ivy Lee - Untitled (animated Fall 2018 - presumably use the Artivive App) </p></figcaption>
+<img src="img/large/borderline.jpg" alt="a beautiful work of art"/>
+<figcaption><p>Raphi "with a Ph but eventually a PhD" King - Precious (helped paint Fall 2019)</p></figcaption>
+<img src="img/large/borderline3.jpg" alt="a beautiful work of art"/>
+<figcaption><p>Olga Medrano Martin del Campo - Ella puede soñar, y tú también! (helped paint Fall 2019) </p></figcaption>
+<img src="img/large/borderline2.jpg" alt="a beautiful work of art"/>
+
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+<h3>Brandeised (2019)</h3>
+	<p> Building off the themes Interspecies Communication and the Anthropocene, Brandeised is dialogue between historic case law and modern laundry tracking technology. Additionaly, the project was traced as a scientific investigation with the laboratory notebook shown alongside the piece. My pamphlet description is copied below. </p>
+
+	<img src="img/large/bd1.jpg" alt="a beautiful work of art"/>
+	<img src="img/large/bd2.jpg" alt="a beautiful work of art"/>
+	<br>
+	<a href="https://photos.app.goo.gl/PNu9zCNb6YeMqai89"> Album with video </a>
+	<br>
+	<p>In 1908, Louis D. Brandeis, an overachieving Harvard Law graduate, delivered the first dossier of scientific evidence to the Supreme Court of the United States. In this case, Muller v. Oregon, a woman&#8217;s employer had been fined for making her work more than 10 hours – all due to a load of laundry. Brandeis argued to uphold the state&#8217;s fine based on scientific consensus about a woman&#8217;s physical abilities and role in society. The resulting decision marks an early attempt to regulate labor and move past the desire for ever increasing work in the industrialized world – all with morally questionable flaws.</p>
+	<br/>
+	<p>To fulfill the modern desire for efficiency, we have faced a number of ironies – none more apparent than the desire to launder our surroundings by pushing waste somewhere else.</p>
+	<br/>
+	<p>More alarmingly, we continue to facialize our world in a particular way. We see scientists and engineers on a journey towards infinite efficiency as we are presented with well-curated displays of progress rather than the haphazard laboratories behind. Worse, the most hidden of laboratories are in the early stages of tracking new critical zones – investigating runaway effects so that others may design a solution.</p>
+	<br/>
+	<p>So when does the face of a critical system become an extension of our species and our problem? The answer may continue from our scientific fantasy – when it achieves for us like a monkey in orbit or is surviving a crisis where corporations may appear to intervene like ducks in an oil spill. At most other times, the artist holds the role of spreading concern.</p>
+	<br/>
+	<p>Like Brandeis, our critical zone begins with a load of laundry. In particular, we observe the phenomenon of microfiber pollution – one of many unchecked sources of ubiquitous marine plastic. In our cybernetically-controlled monitoring lab, we see the efficiency-driven publically-accessible usage of washing machines at Brandeis&#8217;s namesake university. After tracing the battered fiber remnants through the sewer system, we emulate their spread and staining of the environment by metaphoric bubbles.</p>
+	<br/>
+	<p>This is Brandeis&#8217;s Laundry.</p>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Quantization Physics (2019-2020)</h3>
+<p>	In January 2019, I worked on <a href ="https://link.springer.com/book/10.1007/978-1-4757-2063-1" >Mathematical Methods of Classical Mechanics</a> in the Physics Directed Reading Program to explore symplectic geometry and the algebraic structure of observables and symmetries as seen in this <a href ="https://phys-drp.mit.edu/sites/default/files/bowties.pdf" > presentation </a>.
+	<br>
+In January 2020, I continued with learning about the methods of <a href ="https://math.berkeley.edu/~alanw/GofQ.pdf" >Geometric Quantization</a>, an attempt to choose a self-consistent symmetry-preserving map between classical and quantum systems which is useful for Chern-Simons theory and qubits as seen in this <a href ="https://phys-drp.mit.edu/sites/default/files/bowties_0.pdf" > presentation</a>.
+<br>
+For my <a href="img/large/806paper.pdf"> 8.06 term paper </a>, I decided to explore the competing form of quantization known as deformation quantization or the phase space formulation. It was arrived at by two methods: simplifying Fourier transforms to do statistical mechanics and as a quantization to symmetrically treat position and momentum operators. By exponentiation operator representations of position and momentum and canonical commutation relations, it is possible to represent a dynamics using a distribution in the classical phase space rather than a representation of a Hilbert space given a representation of the quantized operators. The only requirement to do so is to deform the one-to-one correspondence of classical and quantum symmetries. The Wigner-Weyl transform is one method of doing so though others are used such as that by Roy Glauber to describe coherent states.
+	</p>
+
+</figcaption>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Splatterbot (2019)</h3>
+	<p>For a class on color, I focused onto relativist models of perception and ways like Munsell of defining a scientific understanding. My method involves a splatter-painting robot whose intentionally manipulated distributions are analyzed in a <a href="img/large/Splatterbot.pdf">scientific paper</a> and presented as a natural history museum display merging curatorial practices of art and science.</p>
+</figcaption>
+<img src="img/large/splatterbot.jpg" alt="a beautiful work of art"/>
+<figcaption>
+	<p>Here are various forms of presentation explored:</p>
+</figcaption>
+<img src="img/large/splat.jpg" alt="a beautiful work of art"/>
+<img src="img/large/splat2.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>We, The Unbound (2019)</h3>
+	<p>Over IAP, I participated in the Suffolk County House of Corrections Prison Mural Painting Project in which 10 MIT students and 10 female prisoners enrolled in pastel/oil classes with either less than one year sentences remaining or in ICE custody came together to turn a multipurpose space into a studio resulting in this collaborative (and later <a href="https://artivive.com/">augmented-reality</a> upgraded) mural.</p>
+	<a href="https://www.wbur.org/artery/2019/01/25/south-bay-correction-mural"> Our first article</a>.
+</figcaption>
+<img src="img/large/unbound.jpg" alt="a beautiful work of art"/>
+<img src="img/large/unbounddesc.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Charcuterie (ongoing hobby)</h3>
+	<p>I have made on the order of 20 cheese boards for art club parties, fused glass workshops, and general meetings with advisees over the years. I'm not necessarily a cheesemonger and am generally limited to the stock at Star Market - though I have gone to the MA Cheese Festival. For a guide based on my experience, see the <a href ="img/large/cheesecraft.pdf"> guide</a> I wrote for an anthropology course about craft.</p>
+</figcaption>
+<img src="img/large/7.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Cereal Research (2019)</h3>
+	<p> At one point I noticed an abundance of cereals being released which have no reason to exist - simply look at recent years in the <a href="https://www.mrbreakfast.com/cereal_timeline.asp"> Cereal Timeline </a>.
+	<img src="img/large/cereal.jpg" alt="a beautiful work of art"/> <br>
+	To keep track of these, I began a collection along with a <a href="https://docs.google.com/spreadsheets/d/1WV4VnuyxTWIXFKLsbqaLV7N6iYWdozo-UwfA0IlrCM8/edit?usp=sharing"> Spreadsheet </a> of my unscientific ratings. This expanded into an attempt to find correlations between base grain, percent sugar, price, and rating. <br>
+	Ultimately, only qualitative conclusions can be made: I dislike corn and sugar has minimal impact unless over 40 percent - at which point the product is usually designed to mimic a sugary snack.
+	</p>
+
+</figcaption>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Spork in the Road (2018)</h3>
+	<p>Steel, Dream-Catcher</p>
+	<p>4.301 Themes: Daemon, Body Extension. A model of how decisions control behavior and desire to resist change.</p>
+</figcaption>
+<img src="img/large/19.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Rocket Team Activities (2017-2018)</h3>
+	<h4> Kalman Filter </h4>
+	<p> On the avionics team, I worked on developing firmware in C++ using an extended Kalman filter to combine sensor values and an expected flight profile for "sensor fusion".
+	<ul>
+	<li>The rocket is spinning and not angled straight up, so we must use a separate Madgwick Filter to find, integrate z acceleration.</li>
+	<li>Drag is a nonlinear force, so we must compute Jacobians from past measurements.</li>
+	<li>Over Mach 1, the particular rocket design involves Prandtl-Meyer expansion fans which require a factor of 10 error on barometer reading.</li>
+	<li>All data is simulated based on assumptions about mounting+weather as data logging has failed due to flash/battery issues in separate development cycle.</li>
+	</ul>
+	<h4> Dispersion Analysis </h4>
+	<p>For an FAA Class 3 waiver, one must provide a map around the launch site confidence intervals where a rocket is expected to land with functioning/non-functioning parachutes, different wind conditions, and other factors such as launch angle. Typically, the workflow was to take motor data from BurnSim and aerodynamic profiles from RASAero and place them into a proprietary $1000 program to generate these graphs. Previously, an entire VM was used to run a Flask server to modify files and run them in OpenRocket. To replace this, I created a context menu to set mean & standard deviation for parameters, then run arbitrarily many (memory-limited) simulations with results appended to a csv file. </p>
+	<h4> L1 Rocket </h4> <img src="img/large/rockets.jpg" alt="a beautiful work of art"/>
+	<p>As with all Rocket Team members, I developed my clone of <a href="http://reilley.net/">Andrew Reilley</a>'s L1 Rocket (LOC-precision stock parts and laser-cut centering rings/fins simulated in OpenRocket). The following month, I produced another in under 2 hours. And the following year, I co-led the team build session.</p>
+</figcaption>
+
+
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Gavle Goat Sweater (2018)</h3>
+	<p>Annual Animatronic Ugly Christms Sweater</p>
+	<p>Based on Swedish goat famous for arson attempts.</p>
+</figcaption>
+<img src="img/large/6a.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Culture Consumption (2018)</h3>
+	<p>White Chocolate & Worms
+</p><p>
+4.301 Spring 2018 Final Project with Erika Mynio & Peter Duff
+</p><p>I put off uploading this until I could explain it to my mom.
+</p><p>"Some of the best work I've ever seen come out of an intro art class" - reviewer
+</p>
+</figcaption>
+<img src="img/large/cultureconsumption.jpg" alt="a beautiful work of art"/
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Annihilation (2018)</h3>
+	<p>Glass, Mirror Acrylic</p>
+	<p>4.322 - Final Project with precursors</p>
+	<p>A Montessori-style board game designed to pedagogically emulate rules of manipulating propagators in particle physics.</p>
+</figcaption>
+<img src="img/large/annihilation.jpg" alt="a beautiful work of art"/>
+<figcaption>
+<p>These engraved rules were adapted from the rules of Feynman diagrams with design considerations from K. Salen and E. Zimmerman, Rules of Play (2014). For example, a cybernetic balance of negative and positive feedback systems (like chutes and ladders) is attempted.</p>
+</figcaption>
+<img src="img/large/anh.jpg" alt="a beautiful work of art"/>
+<figcaption>
+The futuristic aesthetic is achieved from slumped glass, mirror acrylic, and a reflective textured material.
+</figcaption>
+<img src="img/large/anhdet.jpg" alt="a beautiful work of art"/>
+<figcaption>
+	<h3>Modular Grit (2018)</h3>
+	<p>Found material samples</p><p>4.322 Box Object - Explores creation of modular environments around objects</p>
+</figcaption>
+<img src="img/large/grit.jpg" alt="a beautiful work of art"/>
+<figcaption>
+	<h3>Coupling (2018)</h3>
+	<p> Glass & Ceramic
+	</p><p>
+4.322 Midterm Project - Explores creation of modular environments around objects specifically between well-defined particles and background fields</p>
+</figcaption>
+<img src="img/large/coupling.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Window Painting (2015-2017)</h3>
+	<p>I've worked on 12 collaborative window painting projects in high school, usually for local competitions or local businesses around Halloween/Christmas switching roles from designer to paint mixer to painter.</p>
+</figcaption>
+<p>A standard local business Christmas Display (Nov 2016)</p>
+<img src="img/large/16.jpg" alt="a beautiful work of art"/>
+<p>My first event (Sept 2015)</p>
+<img src="img/large/16b.jpg" alt="a beautiful work of art"/>
+Annual Halloween contest (Oct 2015)
+<img src="img/large/16a1.jpg" alt="a beautiful work of art"/>
+<img src="img/large/16a2.jpg" alt="a beautiful work of art"/>
+<p>Rustic winter theme for country store (Nov 2015)</p>
+<img src="img/large/16c.jpg" alt="a beautiful work of art"/>
+<p>Candyland theme by me, Christmas contest (Nov 2015)</p>
+<img src="img/large/16d.jpg" alt="a beautiful work of art"/>
+<p>Dairy Queen winter commission (Dec 2015)</p><img src="img/large/16e.jpg" alt="a beautiful work of art"/>
+<p>Annual Halloween contest (Oct 2016)</p>
+<img src="img/large/16f.jpg" alt="a beautiful work of art"/>
+<p>Local Car Dealership (Nov 2016)</p>
+<img src="img/large/16g.jpg" alt="a beautiful work of art"/>
+<p>Local Candy Shop &amp; Creamery (Apr 2017)</p>
+<img src="img/large/16h.jpg" alt="a beautiful work of art"/>
+Collaborators: Deanna Arnone, Kaley Murray, Ryan Kniss, Shalee Alison, Alyssa Avery, Sarah Houston, Rianna Learn, Emma Learn, Oliver Lindrose, Chris Houston, Mariah Lonergan, Katelyn Carnell, Dana Holliday, Autumn Hause, and more.
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Mantis Shrimp (2017)</h3>
+	<p>Wire Sculpture</p><p>Featured in Greater Johnstown Young Artists Exhibit 2017
+Realism approach to 3D wire sculpting. Only took 17 hours from reference image.
+	</p>
+</figcaption>
+<img src="img/large/10.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Light Flower (2017)</h3>
+	<p> For my freshman advising seminar, a team of Talia Blum, Erica Chiu, Anna Kooperberg, and I sought to construct an interactive kinetic art project. Ultimately, we ended up with a flower that opens and changes colors as you approach it using an IR sensor, rack gear, mechanical plastic connections, and, of course, an Arduino with hand-made interface board.
+	Talia and I were the associate advisors the following year.</p>
+</figcaption>
+<p> A video from before fixing feedback</p>
+<iframe src="https://drive.google.com/file/d/1jqz4132BysLQkjgeubnjGo5Cjka0Ro_4/preview" width="480" height="360"></iframe>
+<p> The state 2 years later</p>
+<img src="img/large/lf.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Life Fountain Fusing(2017)</h3>
+	<p>Detail of fused/slumped glass panels. I was the first in HS to try our glass-fusing techniques. Since then, I've run 3 workshops in the MIT Edgerton Center while learning more techniques.</p>
+</figcaption>
+<img src="img/large/8b.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Life Fountain (2017)</h3>
+	<p>Mixed Media (Ceramic, Glass, Wire, Fountain)</p>
+	<p>My final HS art project. Rather self-explanatory. The water was hard to control so now it's an outdoor fountain</p>
+</figcaption>
+<img src="img/large/8a.jpg" alt="a beautiful work of art"/>
+<figcaption>
+	<p>Since you scrolled down, I'll give you some more details. My art teacher had purchased materials for fusing glass which sat for months with nobody attempting to use it. After testing with some simple details, I realized organic shapes carried over best and decided on a wet outdoor aesthetic. I realized that glass would allow a fountain to look more unteresting than my solid ceramic one in the past. I was also in a wire-sculpting phase so that forms the main structure.</p>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>The Kite Runner (2017)</h3>
+	<p>Wire Sculpture</p>
+	<p>Senior Project was to make something based on favorite required reading in HS. The silhouette was actually cast onto 3 panels from an actual lamp rather than a flashlight. It demonstrates many "parallels" and themes in the book...</p>
+</figcaption>
+<img src="img/large/14.jpg" alt="a beautiful work of art"/>
+<img src="img/large/kiterunner.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>FSM Sweater (2017)</h3>
+	<p>Annual Animatronic Ugly Christms Sweater</p>
+	<p>Based on the Flying Spaghetti Monster's noodly appendages and meatballs, uses MSP430 and servos</p>
+</figcaption>
+<img src="img/large/6b.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Borderline Schrodinger's Cat (2017)</h3>
+	<p> An Arduino-controlled wire sculpture. Every 30 seconds, the eyes start blinking rapidly until settling on the left eye, the right eye, or a superposition.</p> </figcaption>
+<img src="img/large/cat.jpg" alt="a beautiful work of art"/>
+
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Potential Well (2016)</h3>
+	<p>Ceramic</p><p>My mom always wanted me to make her a fountain and I'm the only one doing "well", so I decided to build a well. This, the roof, holds a normalized inverse Fourier transform of a Fourier transform in the QM convention. The base has the time independent Schrödinger / Energy Eigenvalue Equation embedded on it.</p>
+</figcaption>
+<img src="img/large/11.jpg" alt="a beautiful work of art"/>
+<img src="img/large/11a.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>The Tuileries (2016)</h3>
+	<p>Pen/Ink</p>
+	<p>When commissioned for a piece for our Pictures at an Exhibition showcase for Fall Fine Arts Day, I chose the French garden with children quarreling at play as I enjoy French culture, having read a number of novels and biographies set in late 1 8th century France. Hence the color scheme. I did continue traditions of art nouveau in repeating patterns natural features. I also paid close attention to the architecture while abstracting away the more intricate sectionsThe Tuileries
+</figcaption>
+<img src="img/large/15.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>SNARP's Not Another Rectangle Plotter (2016)</h3>
+	<p>This recursive acronym which I built so my friend could cross "build a CNC machine" off his bucket list. The idea of linear of motion was easy to attain and so was mechanical construction. Reverse engineering the drifted PWM motor logic and driving took the most time. The system plots from a set of points to a resolution of 256x256 based not on linear distance of stepper motors but on ratios of selfcalibrated timing to the end limit switches and back. This drift based on battery level causes significant error over time, resulting in offset drawings.</p>
+</figcaption>
+<img src="img/large/13a.jpg" alt="a beautiful work of art"/>
+<img src="img/large/13.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+<h2>HS Sketch Books</h2>
+	<h3>Close Up Sketch (2016)</h3>
+	<p>For this weekly sketch book, I chose to focus on the fine details of my antique pencil sharpener collection. This piece features one of the widest ranges of value I have achieved.</p>
+<img src="img/large/22.jpg" alt="a beautiful work of art"/>
+	<h3>Faith Sketch (2016)</h3>
+	<p>For this sketchbook, I interpreted faith as that in ensuring my Lego space shuttle does not break while I draw it. For some reason, I though trying to accent regular patterns would be easier than abnormal ones, but instead mistakes are easier to see. Here, I mainly focused on proper relative perspective geometry. I'm not necessarily pursuing space exploration, but I've had this collecting dust in my room for years.</p>
+<img src="img/large/23.jpg" alt="a beautiful work of art"/>
+	<h3>Effects of Time Sketch (2016)</h3>
+	<p> This was the first in a steak of Pop-Art influenced drawings.</p>
+</figcaption>
+<img src="img/large/24.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Self-Portrait (2016)</h3>
+	<p> Acrylic on Canvas</p><p>
+Just a normal picture of me adorning an umbrella hat and bowtie.</p>
+</figcaption>
+<img src="img/large/27.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Spectring (2016)</h3>
+	<p> Copper Enameling, Nickel</p><p>My only attempt at jewelry and the closest object to something I would wear as memorializing the wavefunction.</p>
+</figcaption>
+<img src="img/large/26.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>My Name's Not Matt (2016)</h3>
+	<p> Acrylic on Paper</p>
+	<p>On the first day of calculus, the teacher showed a magic square algorithm and a few examples students had made up to 57 x 57 all by students named Matt. Since Matt wasn't trying, I decided to work on a 63x63 one in Art Club. I decided to color in numbers of interest found via a C++ program I wrote: primes, twin primes, perfect squares, and powers of numbers who have more than one appearing.</p>
+</figcaption>
+<img src="img/large/25.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>La Mante Sur Le Mont (2016)</h3>
+	<p>Pen/Ink</p><p>
+Featured in Greater Johnstown Young Artists Exhibit 2016</p><p>
+In the style of art nouveau, I attempted to abstract away the details of the intricate mantis shrimp, part of my pseudonym indicating an eclectic view, using curvilinear forms and emphasis of details (eyes compared to segments). I experimented with the idea of stippling across a symmetric border to draw attention to the contrast between a bright organism and its environment analogous to an underwater and "desert" setting. As a result, the floral forms were chosen near those appearing in both. The border was added to enclose each environment. There is no up.
+	</p>
+</figcaption>
+<img src="img/large/9.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Grilled Cheese (2016)</h3>
+	<p>Stained Glass</p>
+	<p>I like grilled cheese. Tasty selenium patina.</p>
+</figcaption>
+<img src="img/large/12.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Gingerbread Houses (2016-2018)</h3>
+	<p>Best-in-Show gingerbread house made collaboratively my senior year. Using these techniques, I've baked a few gingerbread houses such as one of my dorm.</p>
+	<p>Collaborators: Ryan Kniss, Rianna Learn, Emma Learn, Oliver Lindrose, Rylee Poling</p>
+</figcaption>
+<img src="img/large/gingerbread.jpg" alt="a beautiful work of art"/>
+<img src="img/large/17.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Big Mouth Billy Bass Sweater (2016)</h3>
+	<p>Annual Animatronic Ugly Christms Sweater</p>
+	<p>Big Mouth Billy Bass wall fish reprogrammed to swing and sing Christmas songs</p>
+</figcaption>
+<img src="img/large/6c.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Time Dependence (2015)</h3>
+	<p>Mixed Media</p><p>
+Featured in Greater Johnstown Young Artists Exhibit 2015</p><p>
+Allied Artists of Johnstown Achievement Award</p><p>
+After a summer of teaching myself calculus, mechanics, and E&M, I needed to channel my interests into something. So I chose my Crafts I strip­build pot. Yes, I enjoyed electronics, placing real components and proudly displaying Maxwell's equations on the front. I did not test the glazes, so the 1 k ohm resistors do not appear to be so. (My favorite 330ohm are fine.)</p>
+</figcaption>
+<img src="img/large/5.jpg" alt="a beautiful work of art"/>
+<img src="img/large/5a.jpg" alt="a beautiful work of art"/>
+<img src="img/large/5b.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Seahorse (2015)</h3>
+	<p>Rice Paper Batik</p><p>
+Featured at MIT Campus Preview Weekend</p><p>
+Because of snow and an unexpected artist in residence, I had 3 days to complete this project in class. After repeating a cut paper design and transferring it into the bounds of a freehanded seahorse, I began applying the wax. When the fountain pen tipped, I managed to spill out a "sea spirit" on the right. It's good to know I'm haunted. Anyway, I became carried away with realism, as usual, adding a background with schools of fish and the sun.
+</p>
+</figcaption>
+<img src="img/large/20.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Bowtie Holder (2015)</h3>
+	<p>Wood, Nails, Acrylic</p>
+	<p>Upon acquiring my 9th bowtie, I realized their loose ends called for a compact storage location, so I set out to manufacture a custom solution to hang with my clothes and allow me to store even more, so I did. I now have 36 but can only fit 12 so now it holds greeting cards.</p>
+</figcaption>
+<img src="img/large/18.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Wood Burning (2014, 2021)</h3>
+	<p> Ornaments of my dogs. The latest turened out well given I went 7 years without touching my wood burning iron.</p> </figcaption>
+<img src="img/large/woodburn.jpg" alt="a beautiful work of art"/>
+
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Microcosm (2014)</h3>
+	<p>Drawing</p><p>
+Featured in Greater Johnstown Young Artists Exhibit 2014</p><p>
+When instructed to produce a five­point perspective piece, my first instinct was a colony of bacteria under a microscope lens, however I had no idea the roles they would lead in their society, so I rose an order of magnitude and decided to place orders of magnitude arbitrarily branching out of each other.</p>
+</figcaption>
+<img src="img/large/21.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Elementary/Middle School Ceramics (2005-2013)</h3>
+	<p>Ceramic Pieces (9th grade mug, 5th or 6th grade stump person, 8th grade fish, 4th? grade "pinchpot" person, 7th grade alien whistle, 3rd? grade "bowl")</p>
+</figcaption>
+<img src="img/large/early.jpg" alt="a beautiful work of art"/>
+
+
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Elementary/Middle School Art (2005-2013)</h3>
+	<p>First book report (1st? grade)</p>
+</figcaption>
+<img src="img/large/early1.jpg" alt="a beautiful work of art"/>
+	<figcaption><p> Name in block lettering, perspective (circa 5th grade)</p></figcaption>
+<img src="img/large/early2.jpg" alt="a beautiful work of art"/>
+<img src="img/large/early3.jpg" alt="a beautiful work of art"/>
+	<figcaption><p> Patriotic wicker basket (circa 5th grade) </p></figcaption>
+<img src="img/large/early4.jpg" alt="a beautiful work of art"/>
+	<figcaption><p> Pig soap ornament (6th grade) </p></figcaption>
+<img src="img/large/early5.jpg" alt="a beautiful work of art"/>
+	<figcaption><p> Landscape (5th grade) </p></figcaption>
+<img src="img/large/early6.jpg" alt="a beautiful work of art"/>
+	<figcaption><p> Cityscape (8th grade)</p></figcaption>
+<img src="img/large/early7.jpg" alt="a beautiful work of art"/>
+
+
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Computer (2013)</h3>
+	<p> In the boredom of 8th grade while learning about redstone computers in Minecraft and basic CPU architecture, I drew this design in my notebook along with other technical scribbles.</p>
+</figcaption>
+<img src="img/large/computer.jpg" alt="a beautiful work of art"/>
+<img src="img/large/computer2.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Mr. Stick Comics (2009-2011)</h3>
+	<p>I've collected some of them <a href="img/large/stick.pdf">here</a>. I doodled these in my free time and even published on in the school newspaper (which was a once-a-year publication from the Gifted Support class). There are 90 but I'm self-conscious of my dumb jokes, cultural parodies, and gratuitous violence so here's a few that demonstrate my pondering of tunnels and humor. </p> </figcaption>
+	<img src="img/large/stick.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Childhood Maps and Road Landscapes (2007-2010</h3>
+	<p> I've collected all of these <a href="img/large/maps.pdf">here</a>. They including interesting references to local road names and signs - and some interesting takes on road and exit numbering, urban development patterns, and intersection design (the 6-leaf clover).</p> </figcaption>
+	<img src="img/large/maps.jpg" alt="a beautiful work of art"/>
+
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Early Technical Drawings (2004-2008)</h3>
+	<p> I've collected all of these <a href="img/large/development.pdf">here</a>. They include me latching onto technical aesthetics with a focus on tunnels, labels, compartments, supports, stairs, conduits, assemblies, inventories, and some obscure signifier development.</p> </figcaption>
+	<img src="img/large/development.jpg" alt="a beautiful work of art"/>
+
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Very Early Art (2002-2004)</h3>
+	<p> I've collected all of these <a href="img/large/preart.pdf">here</a>. These were made in preschool through kindergarten. They include me latching on to aspects like vehicles with wheels, engines, doors, keys, balance, a face/sun motif in the corner, struts/supports, and drawing the boundary of the paper.</p> </figcaption>
+	<img src="img/large/preart.jpg" alt="a beautiful work of art"/>
+
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+	<h3>Daycare Crafts (2002-2004)</h3>
+	<p> I've collected all of these <a href="img/large/rlc.pdf">here</a>. I was guided through making these during my time in daycare at the Richland Learning Center. I was there for two years so that explains the repeated craft projects. Perhaps this is useful to an anthropologist. </p> </figcaption>
+	<img src="img/large/rlc.jpg" alt="a beautiful work of art"/>
+</figure>
+</li>			</ul>
+			<nav class="icons">
+				<span class="icon nav-prev"> &lt; </span>
+				<span class="icon nav-next"> &gt; </span>
+				<span class="icon nav-close"> X </span>
+			</nav>
+		</section><!-- // slideshow -->
+	</div><!-- // grid-gallery -->
+
+	<div class="info" id="contact">
+	<h2> Contact </h2>
+		bowties (at) mit (dot) edu
+		<br><br> <i>I wear bowties on Tuesdays.</i> 
+	</div>
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/cbpGridGallery.js"></script>
+
+
+<script>
+		var gal = new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+		var projs = [
+			{"x": 0.4,"y": -0.64,"name": "Chemistry Magic Shows", "index":-1},
+			{"x": 0.5,"y": -0.43,"name": "Atomic Physics Splash Courses", "index":-1},
+			{"x": 0,"y": 0.3,"name": "Maker Mentoring", "index":-1},
+            {"x": 0.12,"y": -0.4,"name": "Nuclear Unfolding","index":0},
+{"x": 0.13,"y": 0.5,"name": "RF Receiver","index":1},
+{"x": 0.27,"y": 0.5,"name": "Edgerton Center Activities","index":2},
+{"x": -0.66,"y": -0.12,"name": "Coconut","index":3},
+{"x": -0.6,"y": -0.62,"name": "Walking","index":4},
+{"x": 0.65,"y": -0.65,"name": "Jlab Dijet Physics","index":5},
+{"x": -0.44,"y": -0.14,"name": "Borderline","index":6},
+{"x": -0.1,"y": -0.02,"name": "Brandeised","index":7},
+{"x": 0.6,"y": -0.6,"name": "Quantization Physics","index":8},
+{"x": -0.05,"y": -0.1,"name": "Splatterbot","index":9},
+{"x": -0.5,"y": -0.6,"name": "Unbound Mural","index":10},
+{"x": -0.55,"y": 0.35,"name": "Charcuterie Boards","index":11},
+{"x": 0.4,"y": -0.5,"name": "Cereal Research","index":12},
+{"x": -0.31,"y": -0.1,"name": "Spork in the Road","index":13},
+{"x": 0.52,"y": 0.5,"name": "Rocket Team Activities", "index":-1,"index":14},
+{"x": -0.2,"y": 0.2,"name": "Gavle Goat","index":15},
+{"x": -0.62,"y": -0.4,"name": "Culture Consumption","index":16},
+{"x": 0.35,"y": -0.4,"name": "Annhilation","index":17},
+{"x": -0.43,"y": -0.35,"name": "Window Painting","index":18},
+{"x": -0.42,"y": 0.2,"name": "Mantis Shrimp","index":19},
+{"x": 0.15,"y": 0.1,"name": "Light Flower", "index":-1,"index":20},
+{"x": 0.32,"y": 0.1,"name": "Life Fountain Fusing","index":21},
+{"x": -0.15,"y": -0.2,"name": "Life Fountain","index":22},
+{"x": -0.41,"y": 0.41,"name": "The Kite Runner","index":23},
+{"x": 0.02,"y": 0.23,"name": "FSM","index":24},
+{"x": 0.05,"y": -0.14,"name": "Schrodinger's Cat","index":25},
+{"x": 0.21,"y": 0.21,"name": "Well","index":26},
+{"x": -0.64,"y": 0.31,"name": "The Tuileries ","index":27},
+{"x": 0.4,"y": 0.6,"name": "SNARP","index":28},
+{"x": -0.62,"y": 0.31,"name": "Sketch Books","index":29},
+{"x": -0.65,"y": 0.11,"name": "Self-Portrait","index":30},
+{"x": 0.14,"y": -0.15,"name": "Spectring","index":31},
+{"x": -0.12,"y": -0.64,"name": "My Name's Not Matt","index":32},
+{"x": -0.53,"y": 0.15,"name": "La Mante Sur Le Mont","index":33},
+{"x": -0.52,"y": -0.1,"name": "Grilled Cheese","index":34},
+{"x": -0.23,"y": 0.1,"name": "Gingerbread Houses","index":35},
+{"x": -0.31,"y": 0.21,"name": "Billy","index":36},
+{"x": -0.08,"y": -0.41,"name": "Time Dependence","index":37},
+{"x": -0.48,"y": -0.02,"name": "Seahorse Batik","index":38},
+{"x": 0.1,"y": 0.41,"name": "Bowtie Holder","index":39},
+{"x": -0.31,"y": -0.10,"name": "Wood Burning","index":40},
+{"x": -0.2,"y": 0.24,"name": "Microcosm","index":41},
+{"x": -0.19,"y": -0.3,"name": "Early Ceramics","index":42},
+{"x": -0.4,"y": -0.4,"name": "Elementary/Middle School","index":43},
+{"x": 0.23,"y": 0.20,"name": "Computer","index":44},
+{"x": -0.33,"y": 0.41,"name": "Mr. Stick","index":45},
+{"x": -0.2,"y": 0.39,"name": "Childhood Maps","index":46},
+{"x": -0.05,"y": 0.45,"name": "Early Technical Drawings","index":47},
+{"x": -0.4,"y": 0.34,"name": "Very Early Art","index":48},
+{"x": -0.47,"y": -0.41,"name": "Daycare Crafts ","index":49},
+
+        		];
+        	</script>
+        	<script src="js/diagram.js"></script>
+        </body>
+        </html>
+        

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title> Christopher A. Miller</title>
+	<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="common.css">
+	
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+	<div class="info">
+			<img src="img/me/1.jpg" id="face" class="face" onload="facialize()" align="right" height="190" />
+		<div>
+			<h1><a href="index.html" id="name" > Christopher A. Miller </a></h1>
+			<h2> MIT Department of Physics | MIT Edgerton Center | MIT Program in Art, Culture, &amp; Technology </h2>
+			<div class="hdr">
+				<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="portfolio.html">Portfolio</a></li>
+				  <li><a href="random.html">Random</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<script>
+		faced=false;
+		function facialize(){
+			if(!faced){
+				myfaces = ["img/me/1.jpg","img/me/2.jpg","img/me/3.jpg","img/me/4.jpg","img/me/5.jpg","img/me/6.jpg"];
+				document.getElementById("face").src = myfaces[Math.floor(Math.random() * (myfaces.length))];
+				faced=true;
+			}
+		}
+		</script>
+	</div>
+	<div id="grid-gallery" class="grid-gallery info">
+	<h2> Universal Project Portfolio </h2>
+	<h4 id="diagdesc">A diagram based on Neri Oxman's Krebs Cycle of Creativity and on the approach taken on a classmate's <a href="https://annietzhang.com/about">website</a>. It highlights projects in line with the postmodern idea of crossing boundaries between forms of knowledge production. Positioning of projects has high uncertainty so I made them wobble. </h4> 
+	
+<!-- Notes to self: use width 660px for images-->
+	<svg class="canvas"></svg>
+		<section class="grid-wrap">
+			<ul class="grid">
+				<li class="grid-sizer"></li>
