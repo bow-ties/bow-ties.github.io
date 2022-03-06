@@ -317,3 +317,20 @@ nav.icons {
 	padding: 5px;
 	pointer-events: none;  /* Make sure hovering on tooltip doesn't close it*/
 }
+
+.collapsebutton h2{
+	margin: 0.5em auto;
+}
+.collapsible{
+	display: none;
+}
+.collapsebutton h2:after{
+	content: '\02795';
+	font-size: 13px;
+	color: white;
+	float: right;
+	margin-left: 5px;
+}
+.active h2:after {
+	content: "\2796";
+}
