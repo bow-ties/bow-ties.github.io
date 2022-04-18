@@ -5,6 +5,17 @@
 	<title> Christopher A. Miller</title>
 	<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="common.css">
+	<style>
+	.wobblebutton {
+		text-align: center;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		background-color: #f2f2f2;
+		border-left: 3px solid #222222;
+		border-radius: 0px 15px 15px 0px;
+	}
+	</style>
 	
 	<script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
@@ -36,7 +47,9 @@
 	</div>
 	<div id="grid-gallery" class="grid-gallery info">
 	<h2> Universal Project Portfolio </h2>
-	<h4 id="diagdesc">A diagram based on Neri Oxman's Krebs Cycle of Creativity and on the approach taken on a classmate's <a href="https://annietzhang.com/about">website</a>. It highlights projects in line with the postmodern idea of crossing boundaries between forms of knowledge production. Positioning of projects has high uncertainty so I made them wobble. </h4> 
+	<h4 id="diagdesc">A plot of my projects on a spectrum of knowledge production inspired by a  <a href="https://spectrum.mit.edu/winter-2017/neri-oxmans-krebs-cycle-of-creativity/">related diagram</a> and also the approach taken on a classmate's <a href="https://annietzhang.com/about">website</a>. Positions are uncertain so you may want to make them <button onclick="wobble()" class="wobblebutton">wobble</button>. </h4>
+	
+
 	
 <!-- Notes to self: use width 660px for images-->
 	<svg class="canvas"></svg>

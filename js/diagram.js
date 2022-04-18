@@ -107,12 +107,12 @@ circs.enter().append("circle")
 			div.html(d.name+"- to be included")
 		}
 	});
-wobble();
+//wobble();
 	
 function wobble() {	
 	dx=25;
     canv.selectAll("circle").transition().ease(d3.easeElasticInOut).duration(3000)
 		.attr("cx", function(d) { return sposx(d.x)+dx*Math.random()-dx/2; })
 		.attr("cy", function(d) { return sposy(d.y)+dx*Math.random()-dx/2; })
-		.on("end", function() {wobble();});
+		//.on("end", function() {wobble();});
 }

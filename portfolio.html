@@ -5,6 +5,17 @@
 	<title> Christopher A. Miller</title>
 	<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="common.css">
+	<style>
+	.wobblebutton {
+		text-align: center;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		background-color: #f2f2f2;
+		border-left: 3px solid #222222;
+		border-radius: 0px 15px 15px 0px;
+	}
+	</style>
 	
 	<script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
@@ -36,13 +47,21 @@
 	</div>
 	<div id="grid-gallery" class="grid-gallery info">
 	<h2> Universal Project Portfolio </h2>
-	<h4 id="diagdesc">A diagram based on Neri Oxman's Krebs Cycle of Creativity and on the approach taken on a classmate's <a href="https://annietzhang.com/about">website</a>. It highlights projects in line with the postmodern idea of crossing boundaries between forms of knowledge production. Positioning of projects has high uncertainty so I made them wobble. </h4> 
+	<h4 id="diagdesc">A plot of my projects on a spectrum of knowledge production inspired by a  <a href="https://spectrum.mit.edu/winter-2017/neri-oxmans-krebs-cycle-of-creativity/">related diagram</a> and also the approach taken on a classmate's <a href="https://annietzhang.com/about">website</a>. Positions are uncertain so you may want to make them <button onclick="wobble()" class="wobblebutton">wobble</button>. </h4>
+	
+
 	
 <!-- Notes to self: use width 660px for images-->
 	<svg class="canvas"></svg>
 		<section class="grid-wrap">
 			<ul class="grid">
 				<li class="grid-sizer"></li>
+<li><figure>
+<figcaption><h3>French Drain Engineering (2022)</h3></figcaption><img src="img/large/drain2.jpg"/>
+</figure></li>
+<li><figure>
+<figcaption><h3>Bean Counting Pi Day Pie (2022)</h3></figcaption><img src="img/large/beanpie.jpg"/>
+</figure></li>
 <li><figure>
 <figcaption><h3>Nuclear Unfolding (2021)</h3></figcaption><img src="img/large/na_box.jpg" alt="a beautiful work of art"/>
 </figure></li>
@@ -198,6 +217,72 @@
 		
 		<section class="slideshow">
 			<ul>
+<li>
+<figure>
+<figcaption>
+<h3>French Drain Engineering (2022)</h3>
+	<p>To divert water away from my downspout and prevent ponding in my yard and runoff into a driveway, I researched, measured, designed, procured, dug, placed, and tested a french drain system. </p>
+	
+	<p>A downspout could be extended with a simple shallow PVC pipe but to prevent ponding elsewhere, I went for an entire french drain installation with perforated pipe to allow excess groundwater to drain, a gravel trench to retain water in voids, a non-woven landscaping fabric to prevent grass roots and soil runoff from clogging. I also added a catch basin to collect water from a porch and landscaping bed. Conveniently, the end of my yard drops off abruptly to just the right height to have a 1% slope on the pipe from the catch basin.</p>
+	<img src="img/large/drainplan1.jpg"/>
+	<img src="img/large/drainplan2.jpg"/>
+	
+	<p>I began digging with a drain spade/sharpshooter shovel using <a href="https://www.youtube.com/watch?v=tgRoxIzqLRI">this method</a> but ultimately decided to use a tiller instead. Due to my rocky soil, I needed to use a hammer 8 times to remove rocks stuck on the tines.</p>
+	<img src="img/large/drain1.jpg"/>
+	<img src="img/large/drain2.jpg"/>
+	
+	<p>The result:</p>
+	<img src="img/large/drain3.jpg"/>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure>
+<figcaption>
+<h3>Bean Counting Pi Day Pie (2022)</h3>
+	<p> For pi day, I decided to bake a bean pie. I began by sorting and counting the contents of a bag of beans.
+	<br><br>
+	So, in summary, Hurst's HamBeens Cajun 15 BEAN SOUP contains 4646 plus or minus 64 beans. The ingredients list says contains 15 of 17 listed varieties.
+	This batch contains 16 varieties - the two kidney varieties are combined on the ingredients list as "kidney". The two missing are yelloweye and "small white beans" which appears to be a term for the other white beans thrown in without being pre-sorted.
+	<br><br>
+	Errors are due to extrapolation by weighing [yellow pea and lentil have a systematic error from whiteish fragments and yellow fragments - and white kidney vs northern are hard to classify but that error doesn't change the total (it has covariance). Counts without uncertainty are exact, 0.5s are half-beans. Also split peas and lentils are called beans which the UN does not agree with - also split peas are half-peas so realistically one should halve the number.
+	</p>
+	<img src="img/large/beancounter.jpg"/>
+	<p>
+	I then picked out beans following the pattern: <br>
+	3	navy<br>
+	1	pinto<br>
+	4	navy<br>
+	1	cranberry<br>
+	5	navy<br>
+	9	pink<br>
+	2	navy<br>
+	6	small red<br>
+	5	navy<br>
+	3	dark kidney<br>
+	5	navy<br>
+	8	light kidney<br>
+	9	navy<br>
+	7	baby lima<br>
+	9	navy<br>
+	3	black<br>
+	2	navy<br>
+	3	white kidney<br>
+	8	navy<br>
+	4	northern<br>
+	6	navy<br>
+	2	pinto<br>
+	... <br>
+	until I arrived at 299 beans.
+	</p>
+	<img src="img/large/beanscounted.jpg"/>
+	<p>
+	Finally, I incorporated my tediously-counted beans into a <a href="https://tastecooking.com/recipes/bean-pie/"> bean pie recipe </a>.
+	</p>
+	<img src="img/large/beanpie.jpg"/>
+</figcaption>
+</figure>
+</li>
 <li>
 <figure>
 <figcaption>
@@ -437,6 +522,12 @@ For my <a href="img/large/806paper.pdf"> 8.06 term paper </a>, I decided to expl
 	<p>For an FAA Class 3 waiver, one must provide a map around the launch site confidence intervals where a rocket is expected to land with functioning/non-functioning parachutes, different wind conditions, and other factors such as launch angle. Typically, the workflow was to take motor data from BurnSim and aerodynamic profiles from RASAero and place them into a proprietary $1000 program to generate these graphs. Previously, an entire VM was used to run a Flask server to modify files and run them in OpenRocket. To replace this, I created a context menu to set mean & standard deviation for parameters, then run arbitrarily many (memory-limited) simulations with results appended to a csv file. </p>
 	<h4> L1 Rocket </h4> <img src="img/large/rockets.jpg" alt="a beautiful work of art"/>
 	<p>As with all Rocket Team members, I developed my clone of <a href="http://reilley.net/">Andrew Reilley</a>'s L1 Rocket (LOC-precision stock parts and laser-cut centering rings/fins simulated in OpenRocket). The following month, I produced another in under 2 hours. And the following year, I co-led the team build session.</p>
+	
+	<h4> Onion Andrew Rocket </h4>
+	<p> When Andrew graduated, we replaced him with a character named Onion Andrew based on Homestar Runner character <a href="http://www.hrwiki.org/wiki/Onion_Bubs">Onion Bubs</a>. Eventually, in 2022, an iteration of Onion Andrew came into my possession and began rotting so I turned him into a rocket </p>
+	<img src="img/large/onionandrew.jpg" alt="">
+	<img src="img/large/onionandrew2.jpg" alt="">
+	
 </figcaption>
 
 
@@ -886,56 +977,58 @@ When instructed to produce a five­point perspective piece, my first instinct wa
 			{"x": 0.4,"y": -0.64,"name": "Chemistry Magic Shows", "index":-1},
 			{"x": 0.5,"y": -0.43,"name": "Atomic Physics Splash Courses", "index":-1},
 			{"x": 0,"y": 0.3,"name": "Maker Mentoring", "index":-1},
-            {"x": 0.12,"y": -0.4,"name": "Nuclear Unfolding","index":0},
-{"x": 0.13,"y": 0.5,"name": "RF Receiver","index":1},
-{"x": 0.27,"y": 0.5,"name": "Edgerton Center Activities","index":2},
-{"x": -0.66,"y": -0.12,"name": "Coconut","index":3},
-{"x": -0.6,"y": -0.62,"name": "Walking","index":4},
-{"x": 0.65,"y": -0.65,"name": "Jlab Dijet Physics","index":5},
-{"x": -0.44,"y": -0.14,"name": "Borderline","index":6},
-{"x": -0.1,"y": -0.02,"name": "Brandeised","index":7},
-{"x": 0.6,"y": -0.6,"name": "Quantization Physics","index":8},
-{"x": -0.05,"y": -0.1,"name": "Splatterbot","index":9},
-{"x": -0.5,"y": -0.6,"name": "Unbound Mural","index":10},
-{"x": -0.55,"y": 0.35,"name": "Charcuterie Boards","index":11},
-{"x": 0.4,"y": -0.5,"name": "Cereal Research","index":12},
-{"x": -0.31,"y": -0.1,"name": "Spork in the Road","index":13},
-{"x": 0.52,"y": 0.5,"name": "Rocket Team Activities", "index":-1,"index":14},
-{"x": -0.2,"y": 0.2,"name": "Gavle Goat","index":15},
-{"x": -0.62,"y": -0.4,"name": "Culture Consumption","index":16},
-{"x": 0.35,"y": -0.4,"name": "Annhilation","index":17},
-{"x": -0.43,"y": -0.35,"name": "Window Painting","index":18},
-{"x": -0.42,"y": 0.2,"name": "Mantis Shrimp","index":19},
-{"x": 0.15,"y": 0.1,"name": "Light Flower", "index":-1,"index":20},
-{"x": 0.32,"y": 0.1,"name": "Life Fountain Fusing","index":21},
-{"x": -0.15,"y": -0.2,"name": "Life Fountain","index":22},
-{"x": -0.41,"y": 0.41,"name": "The Kite Runner","index":23},
-{"x": 0.02,"y": 0.23,"name": "FSM","index":24},
-{"x": 0.05,"y": -0.14,"name": "Schrodinger's Cat","index":25},
-{"x": 0.21,"y": 0.21,"name": "Well","index":26},
-{"x": -0.64,"y": 0.31,"name": "The Tuileries ","index":27},
-{"x": 0.4,"y": 0.6,"name": "SNARP","index":28},
-{"x": -0.62,"y": 0.31,"name": "Sketch Books","index":29},
-{"x": -0.65,"y": 0.11,"name": "Self-Portrait","index":30},
-{"x": 0.14,"y": -0.15,"name": "Spectring","index":31},
-{"x": -0.12,"y": -0.64,"name": "My Name's Not Matt","index":32},
-{"x": -0.53,"y": 0.15,"name": "La Mante Sur Le Mont","index":33},
-{"x": -0.52,"y": -0.1,"name": "Grilled Cheese","index":34},
-{"x": -0.23,"y": 0.1,"name": "Gingerbread Houses","index":35},
-{"x": -0.31,"y": 0.21,"name": "Billy","index":36},
-{"x": -0.08,"y": -0.41,"name": "Time Dependence","index":37},
-{"x": -0.48,"y": -0.02,"name": "Seahorse Batik","index":38},
-{"x": 0.1,"y": 0.41,"name": "Bowtie Holder","index":39},
-{"x": -0.31,"y": -0.10,"name": "Wood Burning","index":40},
-{"x": -0.2,"y": 0.24,"name": "Microcosm","index":41},
-{"x": -0.19,"y": -0.3,"name": "Early Ceramics","index":42},
-{"x": -0.4,"y": -0.4,"name": "Elementary/Middle School","index":43},
-{"x": 0.23,"y": 0.20,"name": "Computer","index":44},
-{"x": -0.33,"y": 0.41,"name": "Mr. Stick","index":45},
-{"x": -0.2,"y": 0.39,"name": "Childhood Maps","index":46},
-{"x": -0.05,"y": 0.45,"name": "Early Technical Drawings","index":47},
-{"x": -0.4,"y": 0.34,"name": "Very Early Art","index":48},
-{"x": -0.47,"y": -0.41,"name": "Daycare Crafts ","index":49},
+            {"x": 0.45,"y": 0.4,"name": "French Drain","index":0},
+{"x": -0.11,"y": -0.65,"name": "Bean Counting Pi Day Pie","index":1},
+{"x": 0.12,"y": -0.4,"name": "Nuclear Unfolding","index":2},
+{"x": 0.13,"y": 0.5,"name": "RF Receiver","index":3},
+{"x": 0.27,"y": 0.5,"name": "Edgerton Center Activities","index":4},
+{"x": -0.66,"y": -0.12,"name": "Coconut","index":5},
+{"x": -0.6,"y": -0.62,"name": "Walking","index":6},
+{"x": 0.65,"y": -0.65,"name": "Jlab Dijet Physics","index":7},
+{"x": -0.44,"y": -0.14,"name": "Borderline","index":8},
+{"x": -0.1,"y": -0.02,"name": "Brandeised","index":9},
+{"x": 0.6,"y": -0.6,"name": "Quantization Physics","index":10},
+{"x": -0.05,"y": -0.1,"name": "Splatterbot","index":11},
+{"x": -0.5,"y": -0.6,"name": "Unbound Mural","index":12},
+{"x": -0.55,"y": 0.35,"name": "Charcuterie Boards","index":13},
+{"x": 0.4,"y": -0.5,"name": "Cereal Research","index":14},
+{"x": -0.31,"y": -0.1,"name": "Spork in the Road","index":15},
+{"x": 0.52,"y": 0.5,"name": "Rocket Team Activities", "index":-1,"index":16},
+{"x": -0.2,"y": 0.2,"name": "Gavle Goat","index":17},
+{"x": -0.62,"y": -0.4,"name": "Culture Consumption","index":18},
+{"x": 0.35,"y": -0.4,"name": "Annhilation","index":19},
+{"x": -0.43,"y": -0.35,"name": "Window Painting","index":20},
+{"x": -0.42,"y": 0.2,"name": "Mantis Shrimp","index":21},
+{"x": 0.15,"y": 0.1,"name": "Light Flower", "index":-1,"index":22},
+{"x": 0.32,"y": 0.1,"name": "Life Fountain Fusing","index":23},
+{"x": -0.15,"y": -0.2,"name": "Life Fountain","index":24},
+{"x": -0.41,"y": 0.41,"name": "The Kite Runner","index":25},
+{"x": 0.02,"y": 0.23,"name": "FSM","index":26},
+{"x": 0.05,"y": -0.14,"name": "Schrodinger's Cat","index":27},
+{"x": 0.21,"y": 0.21,"name": "Well","index":28},
+{"x": -0.64,"y": 0.31,"name": "The Tuileries ","index":29},
+{"x": 0.4,"y": 0.6,"name": "SNARP","index":30},
+{"x": -0.62,"y": 0.31,"name": "Sketch Books","index":31},
+{"x": -0.65,"y": 0.11,"name": "Self-Portrait","index":32},
+{"x": 0.14,"y": -0.15,"name": "Spectring","index":33},
+{"x": -0.12,"y": -0.64,"name": "My Name's Not Matt","index":34},
+{"x": -0.53,"y": 0.15,"name": "La Mante Sur Le Mont","index":35},
+{"x": -0.52,"y": -0.1,"name": "Grilled Cheese","index":36},
+{"x": -0.23,"y": 0.1,"name": "Gingerbread Houses","index":37},
+{"x": -0.31,"y": 0.21,"name": "Billy","index":38},
+{"x": -0.08,"y": -0.41,"name": "Time Dependence","index":39},
+{"x": -0.48,"y": -0.02,"name": "Seahorse Batik","index":40},
+{"x": 0.1,"y": 0.41,"name": "Bowtie Holder","index":41},
+{"x": -0.31,"y": -0.10,"name": "Wood Burning","index":42},
+{"x": -0.2,"y": 0.24,"name": "Microcosm","index":43},
+{"x": -0.19,"y": -0.3,"name": "Early Ceramics","index":44},
+{"x": -0.4,"y": -0.4,"name": "Elementary/Middle School","index":45},
+{"x": 0.23,"y": 0.20,"name": "Computer","index":46},
+{"x": -0.33,"y": 0.41,"name": "Mr. Stick","index":47},
+{"x": -0.2,"y": 0.39,"name": "Childhood Maps","index":48},
+{"x": -0.05,"y": 0.45,"name": "Early Technical Drawings","index":49},
+{"x": -0.4,"y": 0.34,"name": "Very Early Art","index":50},
+{"x": -0.47,"y": -0.41,"name": "Daycare Crafts ","index":51},
 
         		];
         	</script>
