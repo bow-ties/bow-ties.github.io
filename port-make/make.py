@@ -27,7 +27,7 @@ with open("../portfolio.html",'w',encoding="utf8") as mainfile:
                 mainfile.write(line)
         mainfile.write("\n</figure>\n</li>")
     #Footer
-    with open("port_foot_ish.html",'r',encoding="utf8") as foot:
+    with open("port_foot.html",'r',encoding="utf8") as foot:
         mainfile.write(foot.read())
         
     mainfile.write("""
