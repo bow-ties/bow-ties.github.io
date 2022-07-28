@@ -62,7 +62,7 @@ canv.selectAll('text')
 	.style("text-anchor", "middle")
 	.style("alignment-baseline", "middle")
 	.style("fill", function(d) {
-	var ang = (d.startAngle+d.endAngle)/(4*Math.PI)+0.125;
+		var ang = (d.startAngle+d.endAngle)/(4*Math.PI)+0.125;
 		return scols(ang); 
 	});
 	
@@ -107,7 +107,6 @@ circs.enter().append("circle")
 			div.html(d.name+"- to be included")
 		}
 	});
-//wobble();
 	
 function wobble() {	
 	dx=25;
@@ -116,3 +115,16 @@ function wobble() {
 		.attr("cy", function(d) { return sposy(d.y)+dx*Math.random()-dx/2; })
 		//.on("end", function() {wobble();});
 }
+
+//Allow anchors to projects
+function checkProjectURL(){
+	var loc = decodeURIComponent(location.hash.slice(1));
+	var Nprojs = projs.length
+	for (var i=0; i<Nprojs; i++) {
+		if (projs[i].name == loc){
+			if (gal.isSlideshowVisible) {gal._closeSlideshow();}
+			gal._openSlideshow(projs[i].index);
+		}
+	}
+}
+checkProjectURL();
