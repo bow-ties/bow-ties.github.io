@@ -10,8 +10,7 @@
 		faced=false;
 		function facialize(){
 			if(!faced){
-				myfaces = ["img/me/1.jpg","img/me/2.jpg","img/me/3.jpg","img/me/4.jpg","img/me/5.jpg","img/me/6.jpg"];
-				document.getElementById("face").src = myfaces[Math.floor(Math.random() * (myfaces.length))];
+				document.getElementById("face").src = "img/me/"+(1+Math.floor(Math.random() * (12)))+".jpg";
 				faced=true;
 			}
 		}
@@ -19,9 +18,9 @@
 </head>
 <body>
 	<div class="info">
-			<img src="img/me/1.jpg" id="face" class="face" onload="facialize()" align="right" height="190" />
+			<img src="img/me/1.jpg" id="face" class="face" onload="facialize()" align="right" />
 		<div>
-			<h1><a href="index.html" id="name" > Christopher A. Miller </a></h1>
+			<h1><a href="index.html" id="name" > Christopher "bowties" Miller </a></h1>
 			<div class="hdr">
 				<ul>
 				  <li><a href="index.html">Home</a></li>
@@ -37,7 +36,18 @@
 		<br><br>
 		
 		<ul>
-			<li> I am a Technical Instructor in the <a href="http://tsgphysics.mit.edu/">Technical Services Group</a> at the <a href="https://physics.mit.edu/">MIT Department of Physics</a> where I run lecture demos and labs as well as problem solving for TEAL classes. </li>
+			<li> Currently, I am a <b>Technical Instructor</b> in the <a href="http://tsgphysics.mit.edu/">Technical Services Group</a> at the <a href="https://physics.mit.edu/">MIT Department of Physics</a> where I run lecture demos and labs as well as problem solving for TEAL classes.<br> Currently my duties are
+				<ul>
+					<li> Demos and problem solving help for 3 sections of 8.01 (265 students)</li>
+					<li> Lecture demos for 8.012 </li>
+					<li> Mentoring for the Physics Mentorship Program including taking the course 8.S998 Pedagogy and Practice </li>
+					<li> Being the EHS Representative for the Physics Shops</li>
+					<li> Reorganizing our 9000 square feet of storage space</li>
+				</ul>
+			
+			</li>
+		</ul>
+		<ul>
 			<li>In 2021, I graduated from MIT with an SB in Physics and a minor in <a href="http://act.mit.edu">Art, Culture, and Technology</a>.</li>
 			<li>As a student, I managed a multi-purpose STEAM makerspace known as the <a href="http://edgerton.mit.edu/">Edgerton Center</a> Student Project Lab (4-409).</li>
 			<li>In 2017, I was the valedictorian of <a href ="http://www.richlandsd.com/apps/pages/index.jsp?uREC_ID=355973&type=d&pREC_ID=769872"> Richland High School </a> in suburban <a href="http://www.visitjohnstownpa.com/">Johnstown, PA</a>.</li>
@@ -46,7 +56,7 @@
 	</div>
     <div class="info">
 		<div class="collapsebutton">
-			<h2> MIT Courses </h2>
+			<h2> Past MIT Courses Taken </h2>
 		</div>
 		<div class="collapsible" id="courses">
 			<div class="funbox">
@@ -107,7 +117,7 @@
 	</div>
 	<div class="info">
 		<div class="collapsebutton">
-			<h2> All Activities </h2>
+			<h2>Past Activities </h2>
 		</div>
 		<div class="collapsible" id="activities">
 			<div class="funbox">
@@ -161,6 +171,7 @@
 							<li> Consulting for physics demos</li>
 							<li> MIT Northeast Regional Science Bowl timekeeping</li>
 							<li> MIT Science Olympiad volunteer </li>
+							<li> Cambridge Science Festival volunteer </li>
 						</ul>
 				</div>
 				<div class="boxitem">

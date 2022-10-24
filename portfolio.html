@@ -16,12 +16,21 @@
 		border-radius: 0px 15px 15px 0px;
 	}
 	</style>
+		<script>
+		faced=false;
+		function facialize(){
+			if(!faced){
+				document.getElementById("face").src = "img/me/"+(1+Math.floor(Math.random() * (12)))+".jpg";
+				faced=true;
+			}
+		}
+	</script>
 	
 	<script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 <body>
 	<div class="info">
-			<img src="img/me/1.jpg" id="face" class="face" onload="facialize()" align="right" height="190" />
+			<img src="img/me/1.jpg" id="face" class="face" onload="facialize()" align="right"/>
 		<div>
 			<h1><a href="index.html" id="name" > Christopher A. Miller </a></h1>
 			<div class="hdr">
@@ -32,17 +41,6 @@
 				</ul>
 			</div>
 		</div>
-
-		<script>
-		faced=false;
-		function facialize(){
-			if(!faced){
-				myfaces = ["img/me/1.jpg","img/me/2.jpg","img/me/3.jpg","img/me/4.jpg","img/me/5.jpg","img/me/6.jpg"];
-				document.getElementById("face").src = myfaces[Math.floor(Math.random() * (myfaces.length))];
-				faced=true;
-			}
-		}
-		</script>
 	</div>
 	<div id="grid-gallery" class="grid-gallery info">
 	<h2> Universal Project Portfolio </h2>
