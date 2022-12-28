@@ -89,11 +89,12 @@ div.info:hover {
   background-color: #e2e2e2;
 }
 
-
 #face {
 	margin: 15px 15px;
 	object-fit: scale-down;
 	max-height: 25vh;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 /* General style */
