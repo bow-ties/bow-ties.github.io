@@ -16,21 +16,12 @@
 		border-radius: 0px 15px 15px 0px;
 	}
 	</style>
-		<script>
-		faced=false;
-		function facialize(){
-			if(!faced){
-				document.getElementById("face").src = "img/me/"+(1+Math.floor(Math.random() * (12)))+".jpg";
-				faced=true;
-			}
-		}
-	</script>
 	
 	<script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 <body>
 	<div class="info">
-			<img src="img/me/1.jpg" id="face" class="face" onload="facialize()" align="right"/>
+			<img src="img/me/1.jpg" id="face" class="face" onload="facialize()" align="right" height="190" />
 		<div>
 			<h1><a href="index.html" id="name" > Christopher A. Miller </a></h1>
 			<div class="hdr">
@@ -41,6 +32,17 @@
 				</ul>
 			</div>
 		</div>
+
+		<script>
+		faced=false;
+		function facialize(){
+			if(!faced){
+				myfaces = ["img/me/1.jpg","img/me/2.jpg","img/me/3.jpg","img/me/4.jpg","img/me/5.jpg","img/me/6.jpg"];
+				document.getElementById("face").src = myfaces[Math.floor(Math.random() * (myfaces.length))];
+				faced=true;
+			}
+		}
+		</script>
 	</div>
 	<div id="grid-gallery" class="grid-gallery info">
 	<h2> Universal Project Portfolio </h2>
@@ -53,6 +55,9 @@
 		<section class="grid-wrap">
 			<ul class="grid">
 				<li class="grid-sizer"></li>
+<li><figure>
+<figcaption><h3>Physics Instructional Resources Lab Website (2022-)</h3></figcaption><img src="img/pirl.png"/>
+</figure></li>
 <li><figure>
 <figcaption><h3>French Drain Engineering (2022)</h3></figcaption><img src="img/drain2.jpg"/>
 </figure></li>
@@ -228,6 +233,17 @@
 		
 		<section class="slideshow">
 			<ul>
+<li>
+<figure>
+<figcaption>
+<h3>Physics Instructional Resources Lab Website (2022-)</h3>
+	<p>Before I arrived, our lecture demo website server crashed and was hastily rebuilt as a node server which re-hosts documents from a google drive. I proceeded to rewrite it using a python script which downloads modified documents and generates a list using a metadata database.</p>
+	<p>Upon changing out name from TSG to PIRL, I requested pirl.mit.edu and updated to using SSL certificates.</p>
+	<p></p>
+	<img src="img/pirl.png"/>
+</figcaption>
+</figure>
+</li>
 <li>
 <figure>
 <figcaption>
@@ -1209,63 +1225,64 @@ When instructed to produce a five­point perspective piece, my first instinct wa
 			{"x": 0.4,"y": -0.64,"name": "Chemistry Magic Shows", "index":-1},
 			{"x": 0.5,"y": -0.43,"name": "Atomic Physics Splash Courses", "index":-1},
 			{"x": 0,"y": 0.3,"name": "Maker Mentoring", "index":-1},
-            {"x": 0.45,"y": 0.4,"name": "French Drain","index":0},
-{"x": -0.11,"y": -0.65,"name": "Bean Counting Pi Day Pie","index":1},
-{"x": 0.12,"y": -0.4,"name": "Nuclear Unfolding","index":2},
-{"x": 0.13,"y": 0.5,"name": "RF Receiver","index":3},
-{"x": 0.27,"y": 0.5,"name": "Edgerton Center Activities","index":4},
-{"x": -0.66,"y": -0.12,"name": "Coconut","index":5},
-{"x": -0.6,"y": -0.62,"name": "Walking","index":6},
-{"x": 0.65,"y": -0.65,"name": "Jlab Dijet Physics","index":7},
-{"x": -0.44,"y": -0.14,"name": "Borderline","index":8},
-{"x": -0.1,"y": -0.02,"name": "Brandeised","index":9},
-{"x": 0.6,"y": -0.6,"name": "Quantization Physics","index":10},
-{"x": -0.05,"y": -0.1,"name": "Splatterbot","index":11},
-{"x": -0.5,"y": -0.6,"name": "Unbound Mural","index":12},
-{"x": -0.55,"y": 0.35,"name": "Charcuterie Boards","index":13},
-{"x": 0.4,"y": -0.5,"name": "Cereal Research","index":14},
-{"x": -0.31,"y": -0.1,"name": "Spork in the Road","index":15},
-{"x": 0.52,"y": 0.5,"name": "Rocket Team Activities", "index":-1,"index":16},
-{"x": -0.2,"y": 0.2,"name": "Gavle Goat","index":17},
-{"x": -0.62,"y": -0.4,"name": "Culture Consumption","index":18},
-{"x": 0.35,"y": -0.4,"name": "Annhilation","index":19},
-{"x": -0.43,"y": -0.35,"name": "Window Painting","index":20},
-{"x": 0,"y": 0,"name": "Miscellaneous Projects","index":21},
-{"x": 0.5,"y": 0.7,"name": "Software Development ","index":22},
-{"x": -0.42,"y": 0.2,"name": "Mantis Shrimp","index":23},
-{"x": 0.15,"y": 0.1,"name": "Light Flower", "index":-1,"index":24},
-{"x": 0.32,"y": 0.1,"name": "Life Fountain Fusing","index":25},
-{"x": -0.15,"y": -0.2,"name": "Life Fountain","index":26},
-{"x": -0.41,"y": 0.41,"name": "The Kite Runner","index":27},
-{"x": 0.02,"y": 0.23,"name": "FSM","index":28},
-{"x": 0.05,"y": -0.14,"name": "Schrodinger's Cat","index":29},
-{"x": 0.21,"y": 0.21,"name": "Well","index":30},
-{"x": 0.35,"y": 0.7,"name": "Verti-Walker","index":31},
-{"x": 0.18,"y": 0.32,"name": "Video Game Design","index":32},
-{"x": -0.64,"y": 0.31,"name": "The Tuileries ","index":33},
-{"x": 0.45,"y": 0.6,"name": "SNARP","index":34},
-{"x": -0.62,"y": 0.31,"name": "Sketch Books","index":35},
-{"x": -0.65,"y": 0.11,"name": "Self-Portrait","index":36},
-{"x": 0.14,"y": -0.15,"name": "Spectring","index":37},
-{"x": -0.12,"y": -0.64,"name": "My Name's Not Matt","index":38},
-{"x": -0.53,"y": 0.15,"name": "La Mante Sur Le Mont","index":39},
-{"x": -0.52,"y": -0.1,"name": "Grilled Cheese","index":40},
-{"x": -0.23,"y": 0.1,"name": "Gingerbread Houses","index":41},
-{"x": -0.31,"y": 0.21,"name": "Billy","index":42},
-{"x": -0.08,"y": -0.41,"name": "Time Dependence","index":43},
-{"x": -0.48,"y": -0.02,"name": "Seahorse Batik","index":44},
-{"x": 0.29,"y": 0.4,"name": "Music Box ","index":45},
-{"x": 0.1,"y": 0.41,"name": "Bowtie Holder","index":46},
-{"x": -0.31,"y": -0.10,"name": "Wood Burning","index":47},
-{"x": -0.2,"y": 0.24,"name": "Microcosm","index":48},
-{"x": -0.19,"y": -0.3,"name": "Early Ceramics","index":49},
-{"x": -0.4,"y": -0.4,"name": "Elementary/Middle School","index":50},
-{"x": 0.23,"y": 0.20,"name": "Computer","index":51},
-{"x": -0.33,"y": 0.41,"name": "Mr. Stick","index":52},
-{"x": -0.2,"y": 0.39,"name": "Childhood Maps","index":53},
-{"x": -0.05,"y": 0.45,"name": "Early Technical Drawings","index":54},
-{"x": -0.4,"y": 0.34,"name": "Very Early Art","index":55},
-{"x": -0.47,"y": -0.41,"name": "Daycare Crafts ","index":56},
+            {"x": -0.1,"y": 0.4,"name": "PIRL Website","index":0},
+{"x": 0.45,"y": 0.4,"name": "French Drain","index":1},
+{"x": -0.11,"y": -0.65,"name": "Bean Counting Pi Day Pie","index":2},
+{"x": 0.12,"y": -0.4,"name": "Nuclear Unfolding","index":3},
+{"x": 0.13,"y": 0.5,"name": "RF Receiver","index":4},
+{"x": 0.27,"y": 0.5,"name": "Edgerton Center Activities","index":5},
+{"x": -0.66,"y": -0.12,"name": "Coconut","index":6},
+{"x": -0.6,"y": -0.62,"name": "Walking","index":7},
+{"x": 0.65,"y": -0.65,"name": "Jlab Dijet Physics","index":8},
+{"x": -0.44,"y": -0.14,"name": "Borderline","index":9},
+{"x": -0.1,"y": -0.02,"name": "Brandeised","index":10},
+{"x": 0.6,"y": -0.6,"name": "Quantization Physics","index":11},
+{"x": -0.05,"y": -0.1,"name": "Splatterbot","index":12},
+{"x": -0.5,"y": -0.6,"name": "Unbound Mural","index":13},
+{"x": -0.55,"y": 0.35,"name": "Charcuterie Boards","index":14},
+{"x": 0.4,"y": -0.5,"name": "Cereal Research","index":15},
+{"x": -0.31,"y": -0.1,"name": "Spork in the Road","index":16},
+{"x": 0.52,"y": 0.5,"name": "Rocket Team Activities", "index":-1,"index":17},
+{"x": -0.2,"y": 0.2,"name": "Gavle Goat","index":18},
+{"x": -0.62,"y": -0.4,"name": "Culture Consumption","index":19},
+{"x": 0.35,"y": -0.4,"name": "Annhilation","index":20},
+{"x": -0.43,"y": -0.35,"name": "Window Painting","index":21},
+{"x": 0,"y": 0,"name": "Miscellaneous Projects","index":22},
+{"x": 0.5,"y": 0.7,"name": "Software Development ","index":23},
+{"x": -0.42,"y": 0.2,"name": "Mantis Shrimp","index":24},
+{"x": 0.15,"y": 0.1,"name": "Light Flower", "index":-1,"index":25},
+{"x": 0.32,"y": 0.1,"name": "Life Fountain Fusing","index":26},
+{"x": -0.15,"y": -0.2,"name": "Life Fountain","index":27},
+{"x": -0.41,"y": 0.41,"name": "The Kite Runner","index":28},
+{"x": 0.02,"y": 0.23,"name": "FSM","index":29},
+{"x": 0.05,"y": -0.14,"name": "Schrodinger's Cat","index":30},
+{"x": 0.21,"y": 0.21,"name": "Well","index":31},
+{"x": 0.35,"y": 0.7,"name": "Verti-Walker","index":32},
+{"x": 0.18,"y": 0.32,"name": "Video Game Design","index":33},
+{"x": -0.64,"y": 0.31,"name": "The Tuileries ","index":34},
+{"x": 0.45,"y": 0.6,"name": "SNARP","index":35},
+{"x": -0.62,"y": 0.31,"name": "Sketch Books","index":36},
+{"x": -0.65,"y": 0.11,"name": "Self-Portrait","index":37},
+{"x": 0.14,"y": -0.15,"name": "Spectring","index":38},
+{"x": -0.12,"y": -0.64,"name": "My Name's Not Matt","index":39},
+{"x": -0.53,"y": 0.15,"name": "La Mante Sur Le Mont","index":40},
+{"x": -0.52,"y": -0.1,"name": "Grilled Cheese","index":41},
+{"x": -0.23,"y": 0.1,"name": "Gingerbread Houses","index":42},
+{"x": -0.31,"y": 0.21,"name": "Billy","index":43},
+{"x": -0.08,"y": -0.41,"name": "Time Dependence","index":44},
+{"x": -0.48,"y": -0.02,"name": "Seahorse Batik","index":45},
+{"x": 0.29,"y": 0.4,"name": "Music Box ","index":46},
+{"x": 0.1,"y": 0.41,"name": "Bowtie Holder","index":47},
+{"x": -0.31,"y": -0.10,"name": "Wood Burning","index":48},
+{"x": -0.2,"y": 0.24,"name": "Microcosm","index":49},
+{"x": -0.19,"y": -0.3,"name": "Early Ceramics","index":50},
+{"x": -0.4,"y": -0.4,"name": "Elementary/Middle School","index":51},
+{"x": 0.23,"y": 0.20,"name": "Computer","index":52},
+{"x": -0.33,"y": 0.41,"name": "Mr. Stick","index":53},
+{"x": -0.2,"y": 0.39,"name": "Childhood Maps","index":54},
+{"x": -0.05,"y": 0.45,"name": "Early Technical Drawings","index":55},
+{"x": -0.4,"y": 0.34,"name": "Very Early Art","index":56},
+{"x": -0.47,"y": -0.41,"name": "Daycare Crafts ","index":57},
 
         		];
         	</script>
