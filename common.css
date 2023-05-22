@@ -19,6 +19,7 @@ h3{
 #name {
 	text-decoration: none;
 }
+
 div.info {
 	background-color: #f2f2f2;
 	margin: 0.45em 0.5em;
@@ -26,6 +27,11 @@ div.info {
 	border-left: 3px solid #222222;
 	border-radius: 0px 15px 15px 0px;
 }
+
+#header {
+	height: calc(10vw + 3em + 24px);
+}
+
 div.info:hover {
 	background-color: #e2e2e2;
 	border-left: 4px solid #cc0000;
@@ -92,7 +98,7 @@ div.info:hover {
 #face {
 	margin: 15px 15px;
 	object-fit: scale-down;
-	max-height: 25vh;
+	max-height: calc(100% - 30px);
 	display: inline-block;
 	vertical-align: middle;
 }
