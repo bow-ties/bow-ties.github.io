@@ -8,9 +8,9 @@
 	<script src="https://d3js.org/d3.v5.min.js"></script>
 	<script>
 		faced=false;
-		function facialize(){
-			if(!faced){
-				document.getElementById("face").src = "img/me/"+(1+Math.floor(Math.random() * (12)))+".jpg";
+		function facialize(refresh=false){
+			if(!faced || refresh){
+				face = document.getElementById("face").src = "img/me/"+(1+Math.floor(Math.random() * (12)))+".jpg";
 				faced=true;
 			}
 		}
@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="info" id="header">
-			<img src="img/me/1.jpg" id="face" class="face" onload="facialize()" align="right" />
+		<img src="img/me/1.jpg" id="face" class="face" onload="facialize()" onclick="facialize(true)" align="right" />
 		<div>
 			<h1><a href="index.html" id="name" > Christopher "bowties" Miller </a></h1>
 			<div class="hdr">

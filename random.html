@@ -5,12 +5,21 @@
 	<title> Christopher A. Miller</title>
 	<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="common.css">
+	<script>
+		faced=false;
+		function facialize(refresh=false){
+			if(!faced || refresh){
+				face = document.getElementById("face").src = "img/me/"+(1+Math.floor(Math.random() * (12)))+".jpg";
+				faced=true;
+			}
+		}
+	</script>
 </head>
 <body>
-	<div class="info">
-			<img src="img/me/1.jpg" id="face" class="face" onload="facialize()" align="right" height="190" />
+	<div class="info" id="header">
+		<img src="img/me/1.jpg" id="face" class="face" onload="facialize()" onclick="facialize(true)" align="right" />
 		<div>
-			<h1><a href="index.html" id="name" > Christopher A. Miller </a></h1>
+			<h1><a href="index.html" id="name" > Christopher "bowties" Miller </a></h1>
 			<div class="hdr">
 				<ul>
 				  <li><a href="index.html">Home</a></li>
@@ -19,17 +28,6 @@
 				</ul>
 			</div>
 		</div>
-
-		<script>
-		faced=false;
-		function facialize(){
-			if(!faced){
-				myfaces = ["img/me/1.jpg","img/me/2.jpg","img/me/3.jpg","img/me/4.jpg","img/me/5.jpg","img/me/6.jpg"];
-				document.getElementById("face").src = myfaces[Math.floor(Math.random() * (myfaces.length))];
-				faced=true;
-			}
-		}
-		</script>
 	</div>
 
     <div class="info" id="main">
