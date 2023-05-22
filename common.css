@@ -5,7 +5,7 @@ p, li {
 	margin: auto;
 }
 h1{
-	font-size: 4vw;
+	font-size: 3vw;
 	text-align: center;
 }
 h2 {
@@ -116,8 +116,16 @@ div.info:hover {
 	display: block;
 	width: 100%;
 }
+.grid-gallery figure video {
+	display: block;
+	width: 100%;
+}
 
 .slideshow img {
+	max-width: 660px;
+	margin: auto;
+}
+.slideshow video {
 	max-width: 660px;
 	margin: auto;
 }
@@ -242,6 +250,7 @@ div.info:hover {
 }
 .slideshow figcaption p {
 	padding-top: 10px;
+	padding-bottom: 10px;
 }
 /* Navigation */
 .slideshow nav span {
