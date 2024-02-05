@@ -106,6 +106,70 @@
 	<li>It is possible to send as a mailing list (or as anything@mit.edu but you'll only get replies if the mailing list forwards to you) via <a href="http://kb.mit.edu/confluence/pages/viewpage.action?pageId=5898573">this method</a>. Note this still leaves your athena login in the email headers. </li>
 	<li>More advanced functions can be done via <a href="https://debathena.mit.edu/manpages/www/manpages/lucid/man1/blanche.1.html">blanche</a></li>
 	</ul>
+	
+	
+<h4>Financials:</h4>
+	<p>
+	Purchases and revenues are billed to accounts called Cost Objects AKA cost collectors AKA cost objectives AKA Funds. There are three classes of Cost Objects (https://vpf.mit.edu/cost-objects):
+	<br>
+	Cost Centers - MIT central funds budgeted each fiscal year
+	<br>
+	Internal Orders (prefix I) - non-sponsored funds, can collect interest
+	<br>
+	Work Breakdown Structures (WBS, prefix P) - from sponsored funds, scrutinized for allowable expenses, have end date
+	</p>
+	Cost objects are assigned in ranges as follows:
+	<ul>
+	<li>I 1000000-I 1329999 - internal order balance sheets for non-MIT/deferred</li>
+	<li>P 1000000-P 1329999 - WBS balance sheets for non-MIT/deferred</li>
+	<li>C 1330000-C 1379999 - cost centers for self-funding operations (internal services)</li>
+	<li>C 1380000-C 1999999 - cost centers for admin/instructional operations</li>
+	<li>I 2000000-I 2999999 - internal orders for instructional discretionary/organization expendable</li>
+	<li>P 2000000-P 2999999 - WBS instructional (fellowships, workshops) expendable</li>
+	<li>I 3000000-I 3668999 - internal orders funded by interest on endowment funds (Pool A)</li>
+	<li>I 3669000-I 4479999 - internal orders discretionary/organization funded by interest on other investment funds (Pool C)</li>
+	<li>P 3669000-P 4479999 - WBS instructional (fellowships, workshops)</li>
+	<li>I 4300000-I 4480000 - internal orders for Internal Operations not networking infrastructure</li>
+	<li>P 4300000-P 4480000 - WBS for Internal Operations networking infrastructure</li>
+	<li>P 4480000-P 4499999 - WBS for networking infrastructure</li>
+	<li>P 6000000-P 9999999 - WBS for sponsored research</li>
+	</ul>
+
+	<p>Fund Centers (FC) are virtual parents to which cost objects are required to be assigned for permission tracking.</p>
+	<p>Profit Centers (PC) are virtual parents to which cost objects are assigned for convenience of accounting. </p>
+	<p>The hierarchy can be viewed using the roles database (https://rolesweb.mit.edu/cost_object_info.html?sapSystemId=PS1) where it appears PCs are children of Hierarchical? Profit Centers (HPC).</p>
+	<p>Purchases and revenues are also coded into General/Ledger (G/L) accounts AKA cost elements based on the type of purchase/revenue. These range from vague to hyperspecific based on need for approval needs, regulation, insurance, and/or sponsored research accounting: allowability, overhead expenses, indirect costs. Some examples: </p>
+	<ul>
+	<li>421588	Miscellaneous</li>
+	<li>420226	Materials and Services</li>
+	<li>420214	Laboratory Supplies</li>
+	<li>420128	Chemicals</li>
+	<li>420160	Electrical Components</li>
+	<li>420232	Mechanical Components</li>
+	<li>420258	Office Supplies</li>
+	<li>421900 Computers (&gt;$1000), included in Electronic Data Processing Insurance values</li>
+	<li>421827 Equip/Furniture-Minor ($1000-$5000) - tagged by the Property Office if computers over $1000 or an item over >$3000 with separate Enhancement features bringing value over $5000</li>
+	<li>421818 Equip/Furniture-Major (>$5000) - "Capitalizable", tagged by Property Office, not part of the MTDC; complies with "Federal Acquisition Regulations (FAR) Part 45, the NASA Federal Acquisition Regulations (NASA/FAR) Supplement Part 18-45, and the Department of Energy Regulation (DEAR) Subparts 945.5 and 917.74 of April 198"; similarly $5000 is the "maximum residual inventory" allowed from a closed WBS; capitalized equipment becomes part of MIT's total F&A expenses i.e. is excluded from the Modified Total Direct Cost (MTDC)</li>
+	</ul>
+
+	<p>Most purchases should be made in Coupa which tracks requisitions and purchase orders. </p>
+	<p>A Requisition is effectively a shopping cart.</p>
+	<p>It contains line items which contain an item name/description/part number, a vendor, an expected cost, a commodity (an AI-generated Coupa-internal account that maps to a G/L account; sometimes these are very wrong like a squeeze bottle will be misclassified as "Meetings - Food & Beverages"), and a set of one or more Cost Object-G/L account combinations to charge.</p>
+	<p>The requisition can be submitted through a series of approvers which are added based on permissions for the fund centers and other hooks based on contents.</p>
+	<p>An approved requisition will be split into Purchase Orders sent to each supplier typically via email in the standard cXML format.</p>
+	<p>The supplier then typically sends an invoice to MIT's Accounts Receivable address where it is placed on the PO. Alternatively, the buyer may need to forward the invoice manually. Duplicates break the system so some companies (Digikey) have been instructed to never automatically send any purchase info to the buyer to avoid duplicate invoice submissions.</p>
+	<p>Typically, the products are presumed recieved a set period after the Invoice is received and the invoice is paid via the PO contract terms and the PO is Soft-Closed. Alternatively, the buyer may need to "recieve against" the PO and/or close it - otherwise it will be considered an outstanding cost on the annual budget closeout.</p>
+
+	<p>Sporadically, coupa will create a corresponding Requisition/PO in SAP, MIT's "System of Record" for accounting purposes. When it doesn't budget tracking involves merging SAP and coupa reports to find outstanding POs.</p>
+
+	<p>For purchases over $10000, the buyer must submit a Selection of Source Form with quotes.</p>
+	<p>For purchases over 250000, a competitive contract search must be documented in a Selection of Source Form.</p>
+
+	<p>Journal Vouchers (JVs) are fundamental transactions that allow moving money internally with explanatory attachments. JVs are used to move funds between receiving accounts, to complete internal purchases, or to correct errors.</p>
+
+	<p>ProCards may be used for infrequent purchases with uploaded documentation prior to a swept-charge deadline.</p>
+
+	<p>Requests For Payment (RFPs) can be used to reimburse nonstandard purchases excluding tax and with documentation. These are electronically sent to an approver's RFP inbox. This system has no method to check that you sent them to a person who can approve your purchase against the cost object.</p>
 
 
 <h4>Miscellany:</h4>
